@@ -18,6 +18,7 @@ GFX_MAP = {
     6: "gfx945",
     7: "gfx1100",
     8: "gfx950",
+    9: "gfx1201",
 }
 
 
@@ -139,5 +140,7 @@ def get_device_name():
             return "MI308"
     elif gfx == "gfx950":
         return "MI350"
+    elif gfx == "gfx1201":
+        return "R9700"
     else:
         raise RuntimeError("Unsupported gfx")

@@ -5,6 +5,7 @@ from functools import lru_cache
 _ARCH_TO_DEVICE = {
     "gfx942": "MI300X",
     "gfx950": "MI350X",
+    "gfx1201": "R9700",
 }
 
 
@@ -33,4 +34,4 @@ def is_fp4_avail():
 
 
 def is_fp8_avail():
-    return get_arch() in ("gfx942", "gfx950")
+    return get_arch() in ("gfx942", "gfx950", "gfx1201")
